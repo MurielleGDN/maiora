@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAÏORA, grill et cuisine du Bénin à Haie Vive, Cotonou. Découvrez notre carte et réservez votre table.">
+  <title>MAÏORA — Grill &amp; Cuisine du Bénin · Cotonou</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="entete">
+    <a href="#accueil" class="logo">MAÏORA</a>
+    <nav class="menu-nav" aria-label="Navigation principale">
+      <a href="#a-propos">Notre histoire</a>
+      <a href="#carte">La carte</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#horaires">Horaires</a>
+    </nav>
+    <a href="#reservation" class="bouton bouton-petit">Réserver</a>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section class="hero" id="accueil">
+      <div class="hero-contenu">
+        <p class="surtitre">Cotonou · Haie Vive</p>
+        <h1>MAÏORA</h1>
+        <p class="signature-resto">Grill &amp; Cuisine du Bénin</p>
+        <p class="accroche">Là où les braises rencontrent les saveurs du Bénin, dans une ambiance raffinée.</p>
+        <div class="hero-boutons">
+          <a href="#carte" class="bouton">Voir la carte</a>
+          <a href="#reservation" class="bouton bouton-contour">Réserver une table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOTRE HISTOIRE ===== -->
+    <section class="a-propos" id="a-propos">
+      <p class="surtitre">Notre histoire</p>
+      <h2>Des braises, des saveurs, une signature.</h2>
+      <p>MAÏORA est née d'une envie simple : faire du repas un vrai moment. Ici, les recettes que l'on aime depuis l'enfance rencontrent le feu de la grillade, pour des plats généreux, servis avec soin.</p>
+      <p>Notre nom vient du latin <em>maiora</em>, « les choses plus grandes ». C'est notre promesse : cuisiner avec ambition, et vous accueillir comme on reçoit les siens.</p>
+      <ul class="atouts">
+        <li>Grillades à la braise</li>
+        <li>Cuisine du Bénin revisitée</li>
+        <li>Ambiance raffinée</li>
+      </ul>
+    </section>
+
+    <!-- ===== LA CARTE (onglets) ===== -->
+    <section class="carte" id="carte">
+      <p class="surtitre">La carte</p>
+      <h2>Savourez votre moment</h2>
+
+      <div class="onglets" role="tablist" aria-label="Catégories de la carte">
+        <button type="button" class="onglet actif" role="tab" aria-selected="true" aria-controls="petit-dej" data-cible="petit-dej">☀️ Petit-déj</button>
+        <button type="button" class="onglet" role="tab" aria-selected="false" aria-controls="snacks" data-cible="snacks">🥟 Snacks</button>
+        <button type="button" class="onglet" role="tab" aria-selected="false" aria-controls="fast-food" data-cible="fast-food">🌯 Fast Food</button>
+        <button type="button" class="onglet" role="tab" aria-selected="false" aria-controls="pizzas" data-cible="pizzas">🍕 Pizzas</button>
+        <button type="button" class="onglet" role="tab" aria-selected="false" aria-controls="grillades" data-cible="grillades">🔥 Grillades</button>
+        <button type="button" class="onglet" role="tab" aria-selected="false" aria-controls="plats" data-cible="plats">🍽️ Plats</button>
+      </div>
+
+      <!-- Petit-déj -->
+      <div class="panneau" id="petit-dej" role="tabpanel">
+        <header class="categorie-entete">
+          <span class="categorie-icone" aria-hidden="true">☀️</span>
+          <div>
+            <h3>Petits déjeuners</h3>
+            <p>Bien démarrer la journée</p>
+          </div>
+        </header>
+
+        <h4 class="sous-titre">Formules</h4>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Continental</h5>
+            <p>Café, thé ou chocolat, pain et croissant, beurre ou confiture, jus de fruits, omelette nature.</p>
+          </div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Américain</h5>
+            <p>Continental + omelette au jambon.</p>
+          </div>
+          <p class="plat-prix">2&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Oriental</h5>
+            <p>Américain + omelette au fromage et au jambon.</p>
+          </div>
+          <p class="plat-prix">3&nbsp;000<span>F</span></p>
+        </article>
+
+        <h4 class="sous-titre">Omelettes</h4>
+        <article class="plat">
+          <div class="plat-infos"><h5>Omelette nature</h5></div>
+          <p class="plat-prix">600<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Omelette jambon / fromage</h5></div>
+          <p class="plat-prix">1&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Omelette jambon + fromage</h5></div>
+          <p class="plat-prix">1&nbsp;700<span>F</span></p>
+        </article>
+      </div>
+
+      <!-- Snacks -->
+      <div class="panneau" id="snacks" role="tabpanel" hidden>
+        <header class="categorie-entete">
+          <span class="categorie-icone" aria-hidden="true">🥟</span>
+          <div>
+            <h3>Snacks</h3>
+            <p>Pour grignoter !</p>
+          </div>
+        </header>
+
+        <article class="plat">
+          <div class="plat-infos"><h5>Hot-dog</h5></div>
+          <p class="plat-prix">700<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Crêpe au Nutella</h5></div>
+          <p class="plat-prix">1&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Nems au poulet</h5></div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Nems à la viande</h5></div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Samossa</h5></div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+      </div>
+
+      <!-- Fast Food -->
+      <div class="panneau" id="fast-food" role="tabpanel" hidden>
+        <header class="categorie-entete">
+          <span class="categorie-icone" aria-hidden="true">🌯</span>
+          <div>
+            <h3>Fast Food</h3>
+            <p>Rapide et savoureux</p>
+          </div>
+        </header>
+
+        <article class="plat">
+          <div class="plat-infos"><h5>Shawarma à la viande</h5></div>
+          <p class="plat-prix">1&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Shawarma au poulet</h5></div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Panini</h5></div>
+          <p class="plat-prix">1&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Tacos au poulet</h5>
+            <p>Galette garnie, frites, sauce fromagère.</p>
+          </div>
+          <p class="plat-prix">2&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Tacos à la viande</h5>
+            <p>Galette garnie, frites, sauce fromagère.</p>
+          </div>
+          <p class="plat-prix">2&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Hamburger</h5>
+            <p>Steak, salade, tomate, sauce maison.</p>
+          </div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Cheeseburger</h5>
+            <p>Steak, fromage fondu, oignons, sauce maison.</p>
+          </div>
+          <p class="plat-prix">2&nbsp;500<span>F</span></p>
+        </article>
+      </div>
+
+      <!-- Pizzas -->
+      <div class="panneau" id="pizzas" role="tabpanel" hidden>
+        <header class="categorie-entete">
+          <span class="categorie-icone" aria-hidden="true">🍕</span>
+          <div>
+            <h3>Pizzas</h3>
+            <p>Cuites à la perfection</p>
+          </div>
+        </header>
+
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Pizza Reine</h5>
+            <p>Jambon, fromage, champignons.</p>
+          </div>
+          <p class="plat-prix">5&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Pizza Bolognaise</h5>
+            <p>Sauce bolognaise et fromage.</p>
+          </div>
+          <p class="plat-prix">5&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Pizza Maïora</h5>
+            <span class="badge">♥ Favori</span>
+            <p>La spécialité de la maison.</p>
+          </div>
+          <p class="plat-prix">5&nbsp;000<span>F</span></p>
+        </article>
+      </div>
+
+      <!-- Grillades -->
+      <div class="panneau" id="grillades" role="tabpanel" hidden>
+        <header class="categorie-entete">
+          <span class="categorie-icone" aria-hidden="true">🔥</span>
+          <div>
+            <h3>Grillades</h3>
+            <p>Grillé à la braise !</p>
+          </div>
+        </header>
+
+        <article class="plat">
+          <div class="plat-infos"><h5>Tilapia braisé (petit)</h5></div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Tilapia braisé (grand)</h5>
+            <span class="badge">♥ Favori</span>
+          </div>
+          <p class="plat-prix">3&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>¼ de poulet braisé</h5>
+            <span class="badge">♥ Favori</span>
+          </div>
+          <p class="plat-prix">1&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Aileron</h5></div>
+          <p class="plat-prix">2&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Brochette de bœuf</h5></div>
+          <p class="plat-prix">3&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Brochettes de gésiers</h5></div>
+          <p class="plat-prix">2&nbsp;500<span>F</span></p>
+        </article>
+         
+      </div>
+
+      <!-- Plats -->
+      <div class="panneau" id="plats" role="tabpanel" hidden>
+        <header class="categorie-entete">
+          <span class="categorie-icone" aria-hidden="true">🍽️</span>
+          <div>
+            <h3>Plats</h3>
+            <p>Cuisinés avec amour !</p>
+          </div>
+        </header>
+
+        <article class="plat">
+          <div class="plat-infos"><h5>Spaghetti + omelette</h5></div>
+          <p class="plat-prix">1&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Spaghetti + saucisse</h5></div>
+          <p class="plat-prix">1&nbsp;000<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos"><h5>Spaghetti + omelette + saucisse</h5></div>
+          <p class="plat-prix">1&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Atassi</h5>
+            <p>Riz et haricots.</p>
+          </div>
+          <p class="plat-prix">1&nbsp;500<span>F</span></p>
+        </article>
+        <article class="plat">
+          <div class="plat-infos">
+            <h5>Igname pilée</h5>
+            <span class="badge">♥ Favori</span>
+          </div>
+          <p class="plat-prix">1&nbsp;500<span>F</span></p>
+        </article>
+
+        <h4 class="sous-titre">Accompagnements</h4>
+        <ul class="pastilles">
+          <li>Riz nature <strong>500&nbsp;F</strong></li>
+          <li>Riz gras / créole <strong>700&nbsp;F</strong></li>
+          <li>Frites <strong>1&nbsp;000&nbsp;F</strong></li>
+          <li>Alloco <strong>1&nbsp;000&nbsp;F</strong></li>
+          <li>Attiéké <strong>500&nbsp;F</strong></li>
+          <li>Piron <strong>500&nbsp;F</strong></li>
+          <li>Pomme sautée <strong>1&nbsp;500&nbsp;F</strong></li>
+          <li>Légumes sautés <strong>1&nbsp;500&nbsp;F</strong></li>
+          <li>Akassa <strong>100&nbsp;F</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== GALERIE ===== -->
+    <section class="galerie" id="galerie">
+      <p class="surtitre">Galerie</p>
+      <h2>Un avant-goût</h2>
+      <div class="galerie-grille">
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : poulet braisé"><img src="images/galerie-1.jpg" alt="Poulet braisé doré" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : Shawarma"><img src="images/galerie-2.jpg" alt="Shawarma" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : brochettes de bœuf"><img src="images/galerie-3.jpg" alt="Brochettes de bœuf grillées" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : plantains frits"><img src="images/galerie-4.jpg" alt="Plantains frits" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : Tacos"><img src="images/galerie-5.jpg" alt="Tacos" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : plat en sauce"><img src="images/galerie-6.jpg" alt="Plat mijoté en sauce" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : Bubble tea"><img src="images/galerie-7.jpg" alt="Bubble tea" loading="lazy"></button>
+        <button type="button" class="galerie-item" aria-label="Agrandir la photo : table au dîner"><img src="images/galerie-8.jpg" alt="Table dressée pour le dîner" loading="lazy"></button>
+      </div>
+    </section>
+
+    <!-- ===== HORAIRES ===== -->
+    <section class="horaires" id="horaires">
+      <p class="surtitre">Venez nous voir</p>
+      <h2>Horaires d'ouverture</h2>
+      <p class="badge-statut" id="badge-statut" aria-live="polite">Vérification en cours…</p>
+
+      <ul class="liste-horaires" id="liste-horaires">
+        <li data-jour="1" data-ouverture="11:00" data-fermeture="22:00"><span>Lundi</span><span>11h00 – 22h00</span></li>
+        <li data-jour="2" data-ouverture="11:00" data-fermeture="22:00"><span>Mardi</span><span>11h00 – 22h00</span></li>
+        <li data-jour="3" data-ouverture="11:00" data-fermeture="22:00"><span>Mercredi</span><span>11h00 – 22h00</span></li>
+        <li data-jour="4" data-ouverture="11:00" data-fermeture="22:00"><span>Jeudi</span><span>11h00 – 22h00</span></li>
+        <li data-jour="5" data-ouverture="11:00" data-fermeture="24:00"><span>Vendredi</span><span>11h00 – 00h00</span></li>
+        <li data-jour="6" data-ouverture="11:00" data-fermeture="24:00"><span>Samedi</span><span>11h00 – 00h00</span></li>
+        <li data-jour="0" data-ouverture="12:00" data-fermeture="24:00"><span>Dimanche</span><span>12h00 – 00h00</span></li>
+      </ul>
+
+      <p class="adresse">Haie Vive, Cotonou, Bénin</p>
+    </section>
+
+    <!-- ===== RÉSERVATION ===== -->
+    <section class="reservation" id="reservation">
+      <p class="surtitre">Réservation</p>
+      <h2>Réservez votre table</h2>
+      <p class="intro-resa">Remplissez le formulaire : nous confirmons votre réservation rapidement.</p>
+
+      <form class="formulaire-resa" id="formulaire-resa" novalidate>
+        <div class="champ">
+          <label for="nom">Nom complet</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          <small class="erreur" id="erreur-nom"></small>
+        </div>
+
+        <div class="champ">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="01 00 00 00 00" required>
+          <small class="erreur" id="erreur-telephone"></small>
+        </div>
+
+        <div class="champ">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+          <small class="erreur" id="erreur-date"></small>
+        </div>
+
+        <div class="champ">
+          <label for="heure">Heure</label>
+          <input type="time" id="heure" name="heure" required>
+          <small class="erreur" id="erreur-heure"></small>
+        </div>
+
+        <div class="champ">
+          <label for="personnes">Nombre de personnes</label>
+          <select id="personnes" name="personnes" required>
+            <option value="" selected disabled>Choisir</option>
+            <option value="1">1 personne</option>
+            <option value="2">2 personnes</option>
+            <option value="3">3 personnes</option>
+            <option value="4">4 personnes</option>
+            <option value="5">5 personnes</option>
+            <option value="6">6 personnes</option>
+            <option value="7">7 personnes</option>
+            <option value="8">8 personnes</option>
+            <option value="9">9 personnes</option>
+            <option value="10">10 personnes</option>
+          </select>
+          <small class="erreur" id="erreur-personnes"></small>
+        </div>
+
+        <div class="champ champ-large">
+          <label for="message">Un souhait particulier ? (facultatif)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Anniversaire, terrasse, allergie…"></textarea>
+        </div>
+
+        <button type="submit" class="bouton champ-large">Réserver ma table</button>
+      </form>
+
+      <div class="resa-confirmation" id="resa-confirmation" role="status"></div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p class="logo-pied">MAÏORA</p>
+    <p>Grill &amp; Cuisine du Bénin</p>
+    <p>Haie Vive, Cotonou, Bénin · +229 01 43 18 16 16</p>
+    <p class="credits">© 2026 MAÏORA. Projet fictif réalisé à des fins de portfolio. Photos : Unsplash / Pexels.</p>
+  </footer>
+
+  <!-- ===== VISIONNEUSE DE LA GALERIE ===== -->
+  <div class="lightbox" id="lightbox" aria-label="Photo agrandie">
+    <button type="button" class="lightbox-fermer" id="lightbox-fermer" aria-label="Fermer">✕</button>
+    <button type="button" class="lightbox-nav precedent" id="lightbox-precedent" aria-label="Photo précédente">‹</button>
+    <img id="lightbox-image" src="" alt="">
+    <button type="button" class="lightbox-nav suivant" id="lightbox-suivant" aria-label="Photo suivante">›</button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
